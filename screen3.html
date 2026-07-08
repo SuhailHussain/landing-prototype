@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Screen 1</title>
+  <style>
+    body { margin: 0; background: #fff; }
+    .canvas { width: 1020px; position: relative; margin: 0; }
+    img { width: 1020px; height: auto; display: block; }
+    .hotspot {
+      position: absolute;
+      background: transparent;
+      opacity: 0;
+      cursor: pointer;
+      pointer-events: auto;
+      z-index: 2;
+      display: block;
+      border: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <img src="./assets/images/dfe-child2.png" alt="Screen 3">
+
+    <!-- Top 200px hotspot to Screen 2 -->
+    <a class="hotspot" href="./screen2.html" aria-label="Go to Screen 2"
+       style="left:0; top:0; width:1020px; height:200px;"></a>
+
+    <!-- Middle hotspot to Screen 3 (EDIT these to match your 'middle of the page') -->
+    <!-- Assumes "middle" is roughly around y=450..550; set height to whatever feels right -->
+    <a class="hotspot" href="./screen1.html" aria-label="Go to Screen 1"
+       style="left:0; top:2000px; width:1020px; height:120px;"></a>
+  </div>
+</body>
+</html>
